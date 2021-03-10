@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --color-main: #70d7cc;
+  --color-secondary: #32e39f;
+  --color-white: #ffffff;
+  --color-dark1: #006080;
+  --color-dark2: #07373b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "atten-round-new";
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-dark2);
+}

@@ -8,9 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
+import styled from "styled-components"
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/base.css"
+import "../styles/theme.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +28,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/lio6byh.css" />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
