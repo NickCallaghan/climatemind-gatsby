@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet"
 import styled from "styled-components"
 
 import Header from "./header"
+import "normalize.css"
 import "../styles/base.css"
 import "../styles/theme.css"
 
