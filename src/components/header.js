@@ -15,7 +15,7 @@ const HeaderStyles = styled.div`
     grid-template-columns: 3fr 2fr;
     align-items: center;
     max-width: 1240px;
-    padding: 0 0.5em;
+    padding: 0 1em;
     margin: 0.5em auto;
     .siteTitle {
       font-weight: 500;
@@ -84,12 +84,6 @@ const Header = ({ siteTitle }) => (
           <a href="#">Get Involved</a>
         </li>
       </ul>
-
-      <div className="burger">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
     </nav>
   </HeaderStyles>
 )

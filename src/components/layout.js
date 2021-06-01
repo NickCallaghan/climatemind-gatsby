@@ -35,6 +35,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <link href="https://use.typekit.net/eic0glm.css" rel="stylesheet" />
+        <title>Climate Mind - Powering Climate Conversations</title>
       </Helmet>
       {/* Header */}
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />

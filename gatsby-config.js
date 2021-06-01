@@ -13,6 +13,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images/`,
+          // `${__dirname}/src/images/wave`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
