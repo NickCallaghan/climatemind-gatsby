@@ -12,6 +12,11 @@ import { Helmet } from "react-helmet"
 import styled from "styled-components"
 
 import Header from "./header"
+import Hero from "./homepage/hero"
+import Why from "./homepage/why"
+import What from "./homepage/what"
+import How from "./homepage/how"
+import SponsorBanner from "./homepage/sponsor"
 import "normalize.css"
 import "../styles/base.css"
 import "../styles/theme.css"
@@ -32,25 +37,21 @@ const Layout = ({ children }) => {
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/lio6byh.css" />
       </Helmet>
+      {/* Header */}
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      {/* Hero Image */}
+      <Hero />
+      {/* Why We need Climate Mind */}
+      <Why />
+      {/* What Is Climate mind */}
+      <What />
+      {/* How it works */}
+      <How />
+      {/* Sponsor Banner */}
+      <SponsorBanner />
+      {/* Who we are */}
+      {/* Get Involved */}
+      {/* Footer */}
     </>
   )
 }

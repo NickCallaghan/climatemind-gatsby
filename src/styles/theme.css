@@ -7,18 +7,34 @@
   --color-dark2: #07373b;
 }
 
+*::selection {
+  background-color: var(--color-secondary);
+}
+
+body {
+  font-family: "bilo", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "atten-round-new";
+  font-family: "atten-round-new", sans-serif;
 }
 
-a,
+a {
+  color: var(--color-dark1);
+  text-decoration: none;
+}
+
 a:visited,
 a:hover,
 a:active {
-  color: var(--color-dark2);
+  color: var(--color-secondary);
+  text-decoration: underline;
 }
